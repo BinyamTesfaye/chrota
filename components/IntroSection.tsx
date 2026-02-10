@@ -13,7 +13,7 @@ const IntroSection: React.FC = () => {
         <div className="relative">
           <div className="w-full aspect-[4/3] sm:aspect-[16/9] lg:aspect-[21/9] overflow-hidden rounded-[1.5rem] lg:rounded-[3rem] shadow-2xl lg:shadow-[0_50px_100px_-20px_rgba(0,0,0,0.25)] bg-gray-200">
             <img 
-              src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1920" 
+               src="/image.jpg"  
               alt="Community Integrated Development" 
               className="w-full h-full object-cover"
             />
