@@ -14,45 +14,11 @@ interface HeaderProps {
 
 const Logo: React.FC<{ onClick: () => void }> = ({ onClick }) => (
   <button onClick={onClick} className="flex items-center gap-2 h-full outline-none text-left py-2">
-    <svg viewBox="0 0 600 550" className="h-14 lg:h-20 w-auto drop-shadow-sm">
-      {/* Top Amharic Text */}
-      <text x="300" y="60" textAnchor="middle" fontSize="32" fontWeight="900" fill="#C5A07D" fontFamily="serif">
-        - ለጤናና ለልማት -
-      </text>
-
-      {/* Stylized Amharic Letters "ቸሮታ" (Approximate shapes) */}
-      <g fill="#1B3B5F">
-        {/* Letter 1 - Left */}
-        <path d="M60,140 L220,140 L220,175 L160,175 L160,210 L220,210 L220,245 L160,245 L160,280 L95,280 L95,175 L60,175 Z" />
-        {/* Letter 2 - Middle with Circle */}
-        <path d="M250,140 L400,140 L400,240 Q400,280 340,280 L300,280 Q240,280 240,240 L240,140 M300,180 Q325,180 325,205 Q325,230 300,230 Q275,230 275,205 Q275,180 300,180 Z" />
-        {/* Letter 3 - Right */}
-        <path d="M430,140 L540,140 L540,175 L495,175 L495,280 L430,280 L430,175 L430,140 M460,210 L540,210 L540,245 L460,245 Z" />
-      </g>
-
-      {/* Hand Graphic */}
-      <g transform="translate(300, 380)">
-        {/* Navy Hand Shell */}
-        <path d="M-220,0 Q-220,100 0,140 Q220,100 220,0 L220,-20 Q0,40 -220,-20 Z" fill="#1B3B5F" />
-        {/* Brown Hand Inner */}
-        <path d="M-140,-10 Q-100,30 -60,0 Q-40,20 -20,0 Q0,20 20,0 Q40,20 60,0 Q100,30 140,-10 L140,0 Q0,80 -140,0 Z" fill="#C5A07D" opacity="0.8" />
-      </g>
-
-      {/* CHROTA Text */}
-      <text x="300" y="445" textAnchor="middle" fontSize="58" fontWeight="900" fill="#1B3B5F" fontFamily="Inter, sans-serif" letterSpacing="-2">
-        CHROTA
-      </text>
-
-      {/* Bottom Curved Text */}
-      <defs>
-        <path id="curve" d="M100,480 Q300,560 500,480" />
-      </defs>
-      <text fill="#1B3B5F" fontSize="24" fontWeight="800" fontFamily="Inter, sans-serif" letterSpacing="1">
-        <textPath xlinkHref="#curve" startOffset="50%" textAnchor="middle">
-          FOR HEALTH AND DEVELOPMENT
-        </textPath>
-      </text>
-    </svg>
+    <img 
+      src="/logo.jpg" 
+      alt="CHROTA Logo" 
+      className="h-14 lg:h-20 w-auto drop-shadow-sm object-contain"
+    />
   </button>
 );
 

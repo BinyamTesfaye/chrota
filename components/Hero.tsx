@@ -26,11 +26,14 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
            </svg>
         </div>
         <div className="absolute top-0 right-0 w-3/5 h-full hidden lg:block">
-          <img 
-            src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=1400" 
-            alt="Community Support" 
-            className={`w-full h-full object-cover transition-opacity duration-1000 ${isLoaded ? 'opacity-[0.12]' : 'opacity-0'}`}
-          />
+     <img 
+        src="/logo.jpg"
+        alt="Community Support"
+        className={`w-full h-full object-cover transition-opacity duration-1000 ${
+        isLoaded ? 'opacity-[0.12]' : 'opacity-0'
+        }`}
+     />
+
           <div className="absolute inset-0 bg-gradient-to-r from-white via-white/70 to-transparent"></div>
         </div>
       </div>
